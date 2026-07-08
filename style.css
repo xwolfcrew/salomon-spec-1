@@ -527,7 +527,7 @@ section {
 
   .email-capture {
     left: 50%;
-    transform: translateX(-62%);
+    transform: translateX(-50%);
   }
 
   .divider {
