@@ -179,6 +179,8 @@ section {
 
 .email-capture {
   position: absolute;
+  width: fit-content;
+  height: fit-content;
   bottom: 1rem;
   right: 2rem;
   display: flex;
@@ -515,6 +517,50 @@ section {
   transform: translateX(-100%);
 }
 
+footer {
+  position: relative;
+  width: 100%;
+  height: 60svh;
+  margin-top: 10rem;
+  background-image: url(./assets/hero.avif);
+  background-repeat: none;
+  background-size: cover;
+}
+
+.footer-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.footer-content {
+  position: sticky;
+  top: 80%;
+  width: 100%;
+  height: max-content;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-content .col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-content .col .links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 @media (max-width: 800px) {
   .nav-wrapper {
     flex-direction: column;
@@ -574,5 +620,16 @@ section {
 
   .section4-wrapper .section-right {
     padding: 6rem 1rem;
+  }
+
+  footer {
+    background-position-x: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
   }
 }
