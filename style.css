@@ -15,6 +15,7 @@ img {
 body {
   font-family: "Noto Sans Mono", sans-serif;
   background-color: rgb(237, 237, 237);
+  overflow-x: hidden;
 }
 
 nav {
@@ -524,17 +525,40 @@ section {
     gap: 2rem;
   }
 
-  .section2-wrapper .text-top-left {
-    top: 12rem;
+  .email-capture {
+    left: 50%;
+    transform: translateX(-62%);
   }
 
-  .section2-wrapper .text-top-left h1 {
-    font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+  .divider {
+    padding: 4rem;
+    height: 40svh;
+  }
+
+  .divider::after {
+    width: 86%;
+    height: 80%;
+  }
+
+  .divider h1 {
+    font-size: 1.4rem;
+  }
+
+  .divider p {
+    font-size: 0.8rem;
+  }
+
+  .section2-wrapper .text-top-left {
+    display: none;
   }
 
   .section2-wrapper .gallery-reference {
-    left: 74%;
-    top: 14rem;
+    left: 60%;
+    top: 12rem;
+  }
+
+  .section3 {
+    padding: 6rem 6rem;
   }
 
   .section4 {
